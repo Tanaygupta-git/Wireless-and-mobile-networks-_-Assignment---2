@@ -1,0 +1,11 @@
+let json = "{name:'John'}";
+
+try {
+    let obj = JSON.parse(json);
+    console.log(obj);
+}
+catch (error) {
+    if (error instanceof SyntaxError) {
+        console.log("Invalid JSON format");
+    }
+}
